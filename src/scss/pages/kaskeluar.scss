@@ -1,0 +1,93 @@
+@import "../variable";
+
+.kas-keluar {
+  background-color: $main-color;
+  text-align: center;
+}
+.kkr-navigasi {
+  display: flex;
+  padding: 16px;
+  .kkr-navigasi-kolom1 {
+    width: 40%;
+    text-align: left;
+    svg {
+      margin-top: 14px;
+    }
+  }
+  .kkr-navigasi-kolom2 {
+    width: 50%;
+    text-align: left;
+    h1 {
+      font-weight: 600;
+      font-size: $h4-txt; // 20px
+      color: $title-color; // #1C1C1C
+    }
+  }
+}
+
+.kkr-main {
+  padding: 20px;
+  margin-bottom: 10px;
+  .kkr-main-hero {
+    .kkr-main-hero-omzet {
+      font-size: $copy-txt;
+      color: $teks-color1;
+    }
+    span {
+      font-size: $h1-txt;
+      color: $title-color;
+      font-weight: 800;
+    }
+  }
+}
+
+.kkr-catatan {
+  text-align: center;
+  margin: 0px -10px -10px -10px;
+  padding: 30px;
+  border-radius: 24px 24px 0px 0px;
+  height: 400px;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    height: 30px;
+    text-align: center;
+    font-size: $h2-txt;
+    color: $title-color;
+    font-weight: 700;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #f1f1fa;
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"]:focus {
+    outline: none;
+    border: none;
+  }
+  textarea {
+    min-height: 100px;
+    text-align: center;
+    font-size: $copy-txt;
+    font-weight: 500;
+    padding: 30px;
+    border: none;
+    outline: none;
+  }
+  button {
+    background-color: $main-color;
+    font-size: $h5-txt;
+    color: $title-color;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 16px;
+  }
+}

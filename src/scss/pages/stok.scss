@@ -1,0 +1,189 @@
+@import "../variable";
+
+.stk-navigasi {
+  display: flex;
+  padding: 16px;
+
+  .stk-navigasi-kolom1 {
+    width: 40%;
+    text-align: left;
+    svg {
+      margin-top: 14px;
+    }
+  }
+
+  .stk-navigasi-kolom2 {
+    width: 70%;
+    text-align: left;
+    h1 {
+      font-weight: 600;
+      font-size: $h4-txt; // 20px
+      color: $title-color; // #1C1C1C
+    }
+  }
+}
+
+.stk-tabs {
+  .stk-tabs-tab {
+    display: flex;
+    gap: $spacing;
+    button {
+      border-radius: 8px;
+      border: 1px #e0e0e0;
+      display: flex;
+      width: 49%;
+      padding: 14px 25px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+      background-color: $bg-color;
+      border: 1px solid $border-color;
+      transition: all 300ms ease-in-out;
+    }
+    button:hover {
+      background-color: $main-color;
+      transition: all 300ms ease-in-out;
+    }
+    button:active {
+      background-color: $main-color !important;
+    }
+  }
+
+  .stk-tabs-tabcontent-stok {
+    .stk-tabs-tabcontent-stok-item {
+      .stk-tabs-tabcontent-stok-item-detail {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: $spacing1;
+        margin: $spacing;
+        background-color: $bg-color2;
+        border-radius: 8px;
+        h1 {
+          color: $title-color;
+          font-size: $h5-txt;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .stk-tabs-tabcontent-stok-item-detail-jumlah {
+          text-align: center;
+          border-radius: 4px;
+          background-color: $bg-color3;
+          padding: $spacing;
+          width: 20px;
+          height: 20px;
+          span {
+            color: #fafafa;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+
+  .stk-tabs-pindah-stok {
+    position: sticky;
+    bottom: 10;
+    button {
+      font-weight: 600;
+      display: flex;
+      font-size: $h5-txt;
+      width: 100%;
+      padding: 17px 103px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      background-color: $main-color;
+      border: none;
+    }
+  }
+}
+
+//MODAL VARIABLE
+$modal-bg-color: rgba(0, 0, 0, 0.8);
+$modal-content-bg-color: #fff;
+$modal-width: 500px;
+$modal-padding: 20px;
+$modal-border-radius: 10px;
+
+.stk-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  overflow: auto;
+  background-color: $modal-bg-color;
+  justify-content: center;
+  align-items: center;
+
+  .modal-content {
+    background-color: $modal-content-bg-color;
+    margin: auto;
+    padding: $modal-padding;
+    border: 1px solid #888;
+    width: $modal-width;
+    border-radius: $modal-border-radius;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: modalopen;
+    animation-duration: 0.4s;
+
+    h2 {
+      font-size: $h3-txt; // 24px
+      color: $title-color; // #1C1C1C
+      text-align: center;
+    }
+
+    .menu-list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        .checkmark {
+          position: absolute;
+          right: 10px;
+          color: green;
+        }
+      }
+    }
+  }
+
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}

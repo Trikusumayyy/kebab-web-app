@@ -1,0 +1,21 @@
+// import variabel
+@import "variable";
+
+// import halaman
+@import "pages/detailpesanan";
+@import "pages/homepage";
+@import "pages/kasawal";
+@import "pages/kaskeluar";
+@import "pages/login";
+@import "pages/daftarmenu";
+@import "pages/pembayaran";
+@import "pages/pembelidiskon";
+@import "pages/pilihmenu";
+@import "pages/stok";
+@import "pages/struk";
+@import "pages/transaksi";
+// Tambahkan file halaman lainnya sesuai kebutuhan
+
+* {
+  font-family: $font-stack;
+}

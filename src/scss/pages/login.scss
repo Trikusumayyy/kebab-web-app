@@ -1,0 +1,99 @@
+@import "../variable";
+
+.login {
+  background-color: $main-color;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.lgn-container-1 {
+  color: $title-color;
+  align-items: center;
+  text-align: center;
+  display: flex;
+
+  .lgn-container-1-login {
+    h1 {
+      font-size: $h2-txt; // 32px
+      font-weight: 700;
+    }
+
+    p {
+      font-size: $copy-txt; // 16px
+      font-weight: 500;
+    }
+  }
+}
+
+.lgn-container-2 {
+  justify-content: center;
+  padding: 16px;
+  background-color: $bg-color;
+  margin: 250px -10px -10px -10px;
+  .lgn-container-2-form-login {
+    margin-top: -250px;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color; // #fff
+    border-radius: 24px;
+    align-items: center;
+    padding: $spacing3;
+
+    p {
+      color: $teks-color4;
+      font-size: $harga-txt;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      height: 50px;
+      border-radius: 8px;
+      border: solid 1px $border-color; // #E0E0E0
+      margin: $spacing2;
+    }
+
+    .lgn-container-2-form-login-google {
+      display: flex;
+      background-color: $bg-color; // #fff
+      border: 1px $border-color; // #E0E0E0
+      border-radius: 8px;
+      text-decoration: none;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      border: solid 1px $border-color;
+      svg {
+        margin: $spacing1;
+      }
+      p {
+        color: #000;
+        font-size: $copy-txt; // 16px
+        font-weight: 600;
+        letter-spacing: -0.32px;
+      }
+    }
+
+    .lgn-container-2-form-login-google-lupa-password {
+      color: $title-color; // #1C1C1C
+      font-size: $harga-txt; // 12px;
+      font-weight: 600;
+      letter-spacing: -0.24px;
+      margin-left: 200px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      width: 100%;
+      height: 50px;
+      background: $main-color; // #FFC768
+      border-radius: 8px;
+      border: none;
+      font-size: $harga-txt; // 12px
+      font-weight: 500;
+    }
+  }
+}

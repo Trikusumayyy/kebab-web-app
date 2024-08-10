@@ -1,0 +1,130 @@
+@import "../variable";
+
+.pby-navigasi {
+    display: flex;
+    padding: 16px;
+    .pby-navigasi-kolom1 {
+        width: 40%;
+        text-align: left;
+        svg {
+            margin-top: 14px;
+        }
+    }
+    .pby-navigasi-kolom2 {
+        width: 70%;
+        text-align: left;
+        h1 {
+            font-weight: 600;
+            font-size: $h4-txt; // 20px
+            color: $title-color; // #1C1C1C
+        }
+    }
+}
+
+.pby-bayar {
+    .pby-bayar-total {
+        h1 {
+            color: #ABABAB;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        span {
+            color: #1C1C1C;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .pby-bayar-tombol {
+        display: flex;
+        width: 167px;
+        height: 48px;
+        padding: 12px 33px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex-shrink: 0;
+        .pby-bayar-tombol-online {
+            border-radius: 8px;
+            border: 1px solid #F1F1FA;
+            background-color: #06B05B;
+            svg {
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+            }
+            p{
+                color: #FFF;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+        .pby-bayar-tombol-uang-pas {
+            border-radius: 8px;
+            border: 1px solid #F1F1FA;
+            background-color: #06B05B;
+            svg {
+                width: 24px;
+                height: 24px;
+                flex-shrink: 0;
+            }
+            p{
+                color: #FFF;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.pby-terima {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    .pby-terima-uang-diterima{
+        h1 {
+            color: #ABABAB;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        span {
+            color: #1C1C1C;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .pby-terima-tombol{
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 9px;
+        border-radius: 8px;
+        button {
+            display: flex;
+            padding: 14px 15px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            p{
+                color: #1C1C1C;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+        // hover
+        // background: #FFC768;
+    }
+}

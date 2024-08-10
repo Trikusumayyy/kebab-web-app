@@ -1,0 +1,174 @@
+.dps-navigasi {
+    display: flex;
+    padding: 16px;
+  
+    .dps-navigasi-kolom1 {
+      width: 30%;
+      text-align: left;
+      svg {
+        margin-top: 14px;
+      }
+    }
+  
+    .dps-navigasi-kolom2 {
+      width: 70%;
+      text-align: left;
+      h1 {
+        font-weight: 600;
+        font-size: $h4-txt; // 20px
+        color: $title-color; // #1C1C1C
+      }
+    }
+  }
+  
+  .dps-tambah-produk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .dps-tambah-produk-total {
+      display: flex;
+      flex-direction: row;
+      color: $title-color;
+      font-size: $h4-txt;
+      font-weight: 700;
+      align-items: center;
+      
+      span {
+        margin-right: 10px;
+      }
+       }
+       button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+       }
+    }
+  
+  .dps-pesanan {
+    .dps-pesanan-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: $spacing;
+
+      .dps-pesanan-item-detail {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+  
+        .jumlah {
+          display: flex;
+          padding: 0px 20px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 4px;
+          background-color: $title-color;
+  
+          p {
+            color: $bg-color;
+            font-size: $copy-txt;
+            font-weight: 600;
+          }
+        }
+  
+        h1 {
+          color: $title-color;
+          font-size: $copy-txt;
+          font-weight: 600;
+          line-height: 18px;
+        }
+  
+
+      }
+    }
+  }
+  
+  .dps-total-pesanan {
+    margin-top: 50px;
+    h1 {
+      color: $teks-color3;
+      font-size: $copy-txt;
+      font-weight: 500;
+    }
+    span {
+      color:$title-color;
+      font-size: $copy-txt;
+      font-weight: 500;
+    }
+    & &-subtotal {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    & &-diskon {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    & &-total {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1, span {
+        color: $title-color;
+        font-weight: 700;
+      }
+      
+    }
+  }
+  
+  .dps-total-bayar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    & &-icon {
+      position: relative;
+      font-size: $harga-txt;
+      cursor: pointer;
+    }
+    & &-icon .notification-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: $main-color;
+    color: $title-color;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: $harga-txt;
+    font-weight: bold;
+    }
+    & &-text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p {
+        color: $title-color;
+        font-weight: 400;
+        font-size: $copy-txt;
+      }
+      span {
+        color: $title-color;
+        font-weight: 700;
+        font-size: $copy-txt;
+      }
+    }
+    button {
+      background-color: $main-color;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      width: 35%;
+      font-size: $h5-txt;
+      font-weight: 600;
+      color: $title-color;
+
+    }
+  }

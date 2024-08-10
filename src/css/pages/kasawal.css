@@ -1,0 +1,51 @@
+.kas-awal {
+  background-color: #ffc768;
+}
+
+.navigasi {
+  display: flex;
+  padding: 16px;
+}
+.navigasi .kolom1 {
+  width: 40%;
+  text-align: left;
+}
+.navigasi .kolom1 svg {
+  margin-top: 14px;
+}
+.navigasi .kolom2 {
+  width: 50%;
+  text-align: left;
+}
+.navigasi .kolom2 h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1c1c1c;
+}
+
+.kas #kas {
+  min-height: 500px;
+  background-color: transparent;
+  border: none;
+  width: 98%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 40px;
+  color: #1c1c1c;
+}
+.kas #kas:active {
+  border: none;
+}
+.kas input[type=number]::-webkit-outer-spin-button,
+.kas input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.kas input[type=number]:focus {
+  outline: none; /* Menghilangkan outline biru pada fokus */
+  border: none; /* Menghilangkan border */
+}
+
+/*# sourceMappingURL=kasawal.css.map */

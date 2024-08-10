@@ -1,0 +1,32 @@
+.struk {
+  background-color: #ffc768;
+  margin: 0;
+  overflow: hidden;
+}
+
+.struk .navigasi {
+  display: flex;
+  padding: 16px;
+}
+
+.struk .navigasi .kolom1 {
+  width: 40%;
+  text-align: left;
+}
+
+.struk .navigasi .kolom1 svg {
+  margin-top: 14px;
+}
+
+.struk .navigasi .kolom2 {
+  width: 70%;
+  text-align: left;
+}
+
+.struk .navigasi .kolom2 h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1c1c1c;
+}
+
+/*# sourceMappingURL=struk.css.map */

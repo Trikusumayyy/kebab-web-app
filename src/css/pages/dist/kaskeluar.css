@@ -1,0 +1,100 @@
+.kas-keluar {
+  background-color: #ffc768;
+  text-align: center;
+}
+
+.navigasi {
+  display: flex;
+  padding: 16px;
+}
+
+.navigasi .kolom1 {
+  width: 40%;
+  text-align: left;
+}
+
+.navigasi .kolom1 svg {
+  margin-top: 14px;
+}
+
+.navigasi .kolom2 {
+  width: 50%;
+  text-align: left;
+}
+
+.navigasi .kolom2 h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #1c1c1c;
+}
+
+.main {
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.main .hero .omset {
+  font-size: 16px;
+  color: #454545;
+}
+
+.main .hero span {
+  font-size: 40px;
+  color: #1c1c1c;
+  font-weight: 800;
+}
+
+.catatan {
+  text-align: center;
+  margin: 0px -10px -10px -10px;
+  padding: 30px;
+  border-radius: 24px 24px 0px 0px;
+  height: 400px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.catatan input {
+  height: 30px;
+  text-align: center;
+  font-size: 32px;
+  color: #1c1c1c;
+  font-weight: 700;
+  padding: 15px;
+  border: none;
+  border-bottom: 1px solid #f1f1fa;
+}
+
+.catatan input[type=number]::-webkit-outer-spin-button,
+.catatan input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.catatan input[type=number]:focus {
+  outline: none;
+  border: none;
+}
+
+.catatan textarea {
+  min-height: 100px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 30px;
+  border: none;
+  outline: none;
+}
+
+.catatan button {
+  background-color: #ffc768;
+  font-size: 18px;
+  color: #1c1c1c;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+/*# sourceMappingURL=kaskeluar.css.map */
