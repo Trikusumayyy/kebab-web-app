@@ -1,0 +1,15 @@
+# rule : 3-character prefixes for each pages
+
+daftarmenu.html : dmn
+detailpesanan.html : dps
+homepage.html : hpg
+kasawal.html : kaw
+kaskeluar.html : kkr
+login.html : lgn
+pembayaran.html : pby
+pembelidiskon.html : pbd
+pilihmenu.html : pmu
+pindahstok.html : pst
+stok.html : stk
+struk.html : str
+transaksi.html : trs

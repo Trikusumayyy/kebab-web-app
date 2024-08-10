@@ -1,0 +1,112 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kebab</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	</head>
+	<link rel="stylesheet" href="src/css/style.css">
+	<body>
+
+		<!-- dmn-navigasi -->
+		<section class="dmn-navigasi">
+			<div class="dmn-navigasi-kolom1">
+				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+					<path d="M12.76 7.90662L4.66663 16L12.76 24.0933" stroke="#1C1C1C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M27.3333 16H4.89331" stroke="#1C1C1C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</div>
+			<div class="dmn-navigasi-kolom2">
+				<h1>Daftar Menu</h1>
+			</div>
+		</section>
+
+		<!-- dmn-kategori-menu -->
+		<section class="dmn-kategori-menu">
+			<div class="dmn-kategori-menu-dropdown">
+				<button class="dmn-kategori-menu-open-modal" id="openModal">
+					Kategori Menu
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M19.92 8.94995L13.4 15.47C12.63 16.24 11.37 16.24 10.6 15.47L4.07996 8.94995" stroke="#1C1C1C" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</button>
+			</div>
+		</section>
+
+		<!-- dmn-daftar-menu -->
+		<section class="dmn-daftar-menu">
+			<div class="dmn-daftar-menu-list">
+				<div class="dmn-daftar-menu-list-item">
+					<img src="assets/kebab.jpg" width="auto" alt="">
+					<div class="text">
+						<h1>Kebab Rakyat</h1>
+						<p>Rp10.000</p>
+					</div>
+					<div class="jumlah">
+						<span>0</span>
+					</div>
+				</div>
+				<div class="dmn-daftar-menu-list-item">
+					<img src="assets/kebab.jpg" width="auto" alt="">
+					<div class="text">
+						<h1>Kebab Barbeque</h1>
+						<p>Rp10.000</p>
+					</div>
+					<div class="jumlah">
+						<span>0</span>
+					</div>
+				</div>
+				<div class="dmn-daftar-menu-list-item">
+					<img src="assets/kebab.jpg" width="auto" alt="">
+					<div class="text">
+						<h1>Kebab Jumbo</h1>
+						<p>Rp10.000</p>
+					</div>
+					<div class="jumlah">
+						<span>0</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- modal -->
+		<div class="dmn-modal" id="modal">
+			<div class="dmn-modal-modal-content">
+				<span class="dmn-modal-close-btn" id="closeModal">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M9.16992 14.8299L14.8299 9.16992" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M14.8299 14.8299L9.16992 9.16992" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</span>
+				<h2>Kategori Menu</h2>
+				<ul class="dmn-modal-menu-list">
+					<li>
+						Sosis (<span>4</span>)
+					</li>
+					<li>
+						Kebab Original (<span>12</span>)
+					</li>
+					<li>
+						Burger (<span>3</span>)
+					</li>
+					<li>
+						Pizza (<span>2</span>)
+					</li>
+					<li>
+						Sosis Jumbo (<span>2</span>)
+					</li>
+					<li>
+						Pizza (<span>20</span>)
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- script -->
+		<script src="https://kit.fontawesome.com/24614f3665.js" crossorigin="anonymous"></script>
+		<script src="src/js/modal-daftar-menu.js"></script>
+	</body>
+</html>
